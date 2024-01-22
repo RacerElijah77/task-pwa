@@ -1,6 +1,8 @@
 import {
   IonContent,
   IonHeader,
+  IonImg,
+  IonLabel,
   IonPage,
   IonTitle,
   IonToolbar,
@@ -9,7 +11,12 @@ import "./LaunchScreen.css";
 
 const LaunchScreen: React.FC = () =>{
     return (
-        <h1 className="text-3xl">Hello World</h1>
+          <div className= "h-screen flex items-center justify-center">
+            <IonImg></IonImg>
+            <IonLabel className="text-3xl text-center">
+                Welcome to the TASK Learning Module App!
+            </IonLabel>
+          </div>
     );
 };
 
