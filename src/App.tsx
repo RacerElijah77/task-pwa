@@ -3,6 +3,7 @@ import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import LaunchScreen from './pages/LaunchScreen';
+import AboutAppIntro from './pages/AboutAppIntro';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -21,12 +22,10 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
-          <LaunchScreen/>
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
+        <Route exact path="/LaunchScreen" component={LaunchScreen} />
+        <Route exact path="/" component={LaunchScreen} />
+        <Route exact path="/AboutAppIntro" component={AboutAppIntro} />
+        <Route exact path="/Home" component={Home} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
