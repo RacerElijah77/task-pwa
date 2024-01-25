@@ -1,3 +1,4 @@
+// React Component that is the landing (intro) page when app is launched for the first time.
 import {
   IonButton,
   IonContent,
@@ -10,10 +11,9 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import "./LaunchScreen.css";
-import MainNavButton from '../components/MainNavButton';
+import MainNavButton from "../components/MainNavButton";
 
 const LaunchScreen: React.FC = () => {
-
   // The ionic button might be its own component for now
   return (
     <IonPage>
@@ -22,7 +22,11 @@ const LaunchScreen: React.FC = () => {
         <IonLabel className="text-3xl text-center">
           Welcome to the TASK Learning Module App!
         </IonLabel>
-        <MainNavButton color="primary" routerLink="/AboutAppIntro" text="Next"/>
+        <MainNavButton
+          color="primary"
+          routerLink="/AboutAppIntro"
+          text="Next"
+        />
       </div>
     </IonPage>
   );

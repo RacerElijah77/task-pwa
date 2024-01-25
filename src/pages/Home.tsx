@@ -1,5 +1,13 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import './Home.css';
+import {
+  IonButtons,
+  IonContent,
+  IonHeader,
+  IonMenuButton,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import "./Home.css";
 
 // Might delete the Home TSX files later
 const Home: React.FC = () => {
@@ -9,14 +17,23 @@ const Home: React.FC = () => {
         {/*Toolbar with hamburger menu */}
         <IonToolbar>
           <IonButtons slot="start">
-            <IonMenuButton autoHide={false}></IonMenuButton> 
+            <IonMenuButton
+              autoHide={false}
+              color="primary-task"
+            ></IonMenuButton>
           </IonButtons>
           <IonTitle>Home</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen className="ion-padding">
-        <div>Remove Later - Section for Modules will go here (another JSX component)</div>
-        <div>Remove Later - Section for Event Dates will go here (another JSX component)</div>
+        <div>
+          Remove Later - Section for Modules will go here (another JSX
+          component)
+        </div>
+        <div>
+          Remove Later - Section for Event Dates will go here (another JSX
+          component)
+        </div>
       </IonContent>
     </IonPage>
   );
