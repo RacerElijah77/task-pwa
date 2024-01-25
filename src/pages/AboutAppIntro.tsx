@@ -9,6 +9,7 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import "./AboutAppIntro.css";
+import MainNavButton from "../components/MainNavButton";
 
 const AboutAppIntro: React.FC = () => {
 
@@ -25,9 +26,11 @@ const AboutAppIntro: React.FC = () => {
           vestibulum integer porta nulla orci. At viverra iaculis lacinia odio
           placerat.
         </IonLabel>
-        <IonButton shape="round" color="secondary" routerLink="/Home">
-          OK
-        </IonButton>
+        <MainNavButton
+          color="primary"
+          routerLink="/Home"
+          text="OK"
+        />
       </div>
     </IonPage>
   );

@@ -22,9 +22,6 @@ const LaunchScreen: React.FC = () => {
         <IonLabel className="text-3xl text-center">
           Welcome to the TASK Learning Module App!
         </IonLabel>
-        <IonButton shape="round" color="secondary" routerLink="/AboutAppIntro">
-          Next
-        </IonButton>
         <MainNavButton color="primary" routerLink="/AboutAppIntro" text="Next"/>
       </div>
     </IonPage>
