@@ -2,9 +2,8 @@
 // Will be used as a child in the LessonModuleSection.jsx parent component.
 
 const LessonModuleInstanceButton: React.FC = () =>{
-    return (
-        <h1>Hello World!</h1>
-    );
+  // Research on ion-card Ionic element or Tailwind cards for buttons
+  return <p>This is a module button</p>;
 };
 
 export default LessonModuleInstanceButton;
