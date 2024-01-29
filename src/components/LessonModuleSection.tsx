@@ -20,39 +20,39 @@ const LessonModuleSection: React.FC<moduleNameProp> = ({moduleName}) => {
     {
       moduleID: 0,
       moduleTitle: "Tutorial",
-      color: "",
+      color: "primary",
     },
     {
       moduleID: 1,
       moduleTitle: "Food Insecurity",
-      color: "",
+      color: "secondary",
     },
     {
       moduleID: 2,
       moduleTitle: "What is TASK?",
-      color: "",
+      color: "danger",
     },
     {
       moduleID: 3,
       moduleTitle: "Causes of Food Insecurity",
-      color: "",
+      color: "success",
     },
     {
       moduleID: 4,
       moduleTitle: "Financial Assistance Program",
-      color: "",
+      color: "warning",
     },
     {
       moduleID: 5,
       moduleTitle: "Advocacy",
-      color: "",
+      color: "primary-task",
     },
   ]);
 
   return (
     // Temporary styling - remove div and border later
-    <div className="pl-2 pr-2">
-      <IonLabel className="text-2xl">{moduleName}</IonLabel>
+    <div className="pl-2 pr-2 pt-5">
+      <IonLabel className="text-xl p-2">{moduleName}</IonLabel>
       <div className="flex overflow-x-scroll">
         {/* Utilize map function to loop through data */}
         {moduleInfo.map(function (data) {
@@ -63,6 +63,7 @@ const LessonModuleSection: React.FC<moduleNameProp> = ({moduleName}) => {
                 key={uuidv4()}
                 moduleNumber={data.moduleID}
                 moduleTitle={data.moduleTitle}
+                color={data.color}
               />
             </IonCol>
           );
