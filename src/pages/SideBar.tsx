@@ -7,6 +7,7 @@ import {
   IonTitle,
   IonToolbar,
   IonItem,
+  IonRouterLink,
 } from "@ionic/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -15,21 +16,26 @@ import { faPersonChalkboard } from "@fortawesome/free-solid-svg-icons/faPersonCh
 import { faGear } from "@fortawesome/free-solid-svg-icons/faGear";
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons/faCircleInfo";
 import { faCertificate } from "@fortawesome/free-solid-svg-icons/faCertificate";
+import { faHouse } from "@fortawesome/free-solid-svg-icons/faHouse";
 import { fa1 } from "@fortawesome/free-solid-svg-icons/fa1";
 import { fa2 } from "@fortawesome/free-solid-svg-icons/fa2";
 
 const SideBar: React.FC = () => {
   return (
-    <IonMenu contentId="main-home-content">
+    <IonMenu contentId="main-side-content">
       <IonHeader>
         <IonToolbar>
           <IonTitle>TASK Menu</IonTitle>
         </IonToolbar>
-        <IonItem>
+        <IonItem routerLink="/Home">
+          <FontAwesomeIcon icon={faHouse} className="mr-2" />
+          <IonLabel>TASK Home</IonLabel>
+        </IonItem>
+        <IonItem routerLink="/LessonModulesPageFull">
           <FontAwesomeIcon icon={faPersonChalkboard} className="mr-2" />
           <IonLabel>Lesson Modules</IonLabel>
         </IonItem>
-        <IonItem>
+        <IonItem routerLink="/ProgressSummary">
           <FontAwesomeIcon icon={faCertificate} className="mr-2.5" />
           <IonLabel>Certificate/Progress</IonLabel>
         </IonItem>
@@ -41,7 +47,7 @@ const SideBar: React.FC = () => {
           <FontAwesomeIcon icon={fa2} className="mr-3.5" />
           <IonLabel>Option 2</IonLabel>
         </IonItem>
-        <IonItem>
+        <IonItem routerLink="/Settings">
           <FontAwesomeIcon icon={faGear} className="mr-2" />
           <IonLabel>Settings</IonLabel>
         </IonItem>
@@ -49,10 +55,12 @@ const SideBar: React.FC = () => {
 
       <IonFooter>
         <IonToolbar>
-          <IonTitle>
-            <FontAwesomeIcon icon={faCircleInfo} className="pr-2" />
-            About TASK
-          </IonTitle>
+          <IonItem routerLink="/AboutTask">
+            <IonTitle>
+              <FontAwesomeIcon icon={faCircleInfo} className="pr-2" />
+              About
+            </IonTitle>
+          </IonItem>
         </IonToolbar>
       </IonFooter>
     </IonMenu>

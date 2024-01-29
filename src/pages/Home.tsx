@@ -11,25 +11,15 @@ import {
 } from "@ionic/react";
 import LessonModuleSection from "../components/LessonModuleSection";
 import SideBar from "./SideBar";
+import ToolBarMain from "../components/ToolBarMain";
 
 // Might delete the Home TSX files later
 const Home: React.FC = () => {
   return (
     <>
       <SideBar/>
-      <IonPage id="main-home-content">
-        <IonHeader>
-          {/*Toolbar with hamburger menu */}
-          <IonToolbar>
-            <IonButtons slot="start">
-              <IonMenuButton
-                autoHide={false}
-                color="primary-task"
-              ></IonMenuButton>
-            </IonButtons>
-            <IonTitle>TASK Home</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+      <IonPage id="main-side-content">
+        <ToolBarMain toolBarTitle="TASK Home"/>
         <IonContent fullscreen className="ion-padding">
           <div className="pt-2">
             {/* will change this into different JSX modules for events, misc stuff*/}
