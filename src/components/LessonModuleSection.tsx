@@ -14,8 +14,7 @@ interface moduleNameProp{
 const LessonModuleSection: React.FC<moduleNameProp> = ({moduleName}) => {
   // Note that this information for module title/# is still hardcoded (non real data)
   // this should be dynamically rendered from the database soon
-  // Replace "color" attribute with "img" attribute when this is done
-
+  // Replace "color" attribute with "img" attribute when this is done, images will be grabbed from the DB as well
   const [moduleInfo, setModuleInfo] = useState([
     {
       moduleID: 0,

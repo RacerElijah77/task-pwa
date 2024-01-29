@@ -10,7 +10,6 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import "./LaunchScreen.css";
 import MainNavButton from "../components/MainNavButton";
 
 const LaunchScreen: React.FC = () => {

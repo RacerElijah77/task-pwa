@@ -4,7 +4,6 @@ import {
   IonLabel,
   IonPage,
 } from "@ionic/react";
-import "./AboutAppIntro.css";
 import MainNavButton from "../components/MainNavButton";
 
 const AboutAppIntro: React.FC = () => {

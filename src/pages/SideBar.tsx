@@ -18,8 +18,6 @@ import { faCertificate } from "@fortawesome/free-solid-svg-icons/faCertificate";
 import { fa1 } from "@fortawesome/free-solid-svg-icons/fa1";
 import { fa2 } from "@fortawesome/free-solid-svg-icons/fa2";
 
-import "./SideBar.css";
-
 const SideBar: React.FC = () => {
   return (
     <IonMenu contentId="main-home-content">

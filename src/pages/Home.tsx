@@ -9,7 +9,6 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import "./Home.css";
 import LessonModuleSection from "../components/LessonModuleSection";
 import SideBar from "./SideBar";
 
