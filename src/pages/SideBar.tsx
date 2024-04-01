@@ -22,7 +22,7 @@ import { fa2 } from "@fortawesome/free-solid-svg-icons/fa2";
 
 const SideBar: React.FC = () => {
   return (
-    <IonMenu contentId="main-side-content">
+    <IonMenu side="start" contentId="main-side-content">
       <IonHeader>
         <IonToolbar>
           <IonTitle>TASK Menu</IonTitle>

@@ -23,7 +23,7 @@ const ToolBarMain: React.FC<toolBarProps> = ({toolBarTitle}) => {
       {/*Toolbar with hamburger menu */}
       <IonToolbar>
         <IonButtons slot="start">
-          <IonMenuButton autoHide={true} color="primary-task"></IonMenuButton>
+          <IonMenuButton autoHide={false} menu="start" color="primary-task"></IonMenuButton>
         </IonButtons>
         <IonTitle>{toolBarTitle}</IonTitle>
       </IonToolbar>

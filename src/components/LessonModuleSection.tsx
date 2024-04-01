@@ -55,11 +55,11 @@ const LessonModuleSection: React.FC<moduleNameProp> = ({moduleName}) => {
       <div className="flex overflow-x-scroll">
         {/* Utilize map function to loop through data */}
         {moduleInfo.map(function (data) {
-          console.log(uuidv4()); // remove later
+          // console.log(uuidv4()); // remove later
           return (
             <IonCol>
               <LessonModuleInstanceButton
-                key={uuidv4()}
+                key={uuidv4() + 1}
                 moduleNumber={data.moduleID}
                 moduleTitle={data.moduleTitle}
                 color={data.color}

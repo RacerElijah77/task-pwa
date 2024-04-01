@@ -35,7 +35,7 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         <Route exact path="/LaunchScreen" component={LaunchScreen} />
         <Route exact path="/AboutAppIntro" component={AboutAppIntro} />
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={LaunchScreen} />
         <Route exact path="/Home" component={Home} />
         <Route exact path="/AboutTask" component={AboutTask} />
         <Route exact path="/LessonModulesPageFull" component={LessonModulesPageFull} />
